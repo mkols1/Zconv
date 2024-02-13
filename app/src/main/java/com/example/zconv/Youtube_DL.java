@@ -2,31 +2,31 @@ package com.example.zconv;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Youtube_DL extends AppCompatActivity {
 
-    private Button ytdl_button;
+    Button back;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_youtube_dl);
 
-        ytdl_button = (Button)findViewById(R.id.ytdl);
 
-        ytdl_button.setOnClickListener(new View.OnClickListener() {
+        back = (Button) findViewById(R.id.ytdl_back);
+
+        back.setOnClickListener(new View.OnClickListener(){
+
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(view.getContext(), Youtube_DL.class);
+                Intent i = new Intent(view.getContext(), MainActivity.class);
                 startActivity(i);
-
-
             }
         });
     }
-
-
 }

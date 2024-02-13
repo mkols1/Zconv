@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Zconv</string>
+    <string name="main1">Youtube\nDownload</string>
+    <string name="main2">X\n(Formerly Twitter)\nDownload</string>
+    <string name="main3">Webm2Mp4</string>
+    <string name="main4">Mp42Webm</string>
+    <string name="main5">Video2Gif</string>
+    <string name="main6">Placeholder</string>
+
+    <!--Youtube_DL-->
+    <string name="ytdl_back">Back</string>
+
 </resources>
