@@ -6,13 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/ytdl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/main1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <Button
+        android:id="@+id/X_dl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/main2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ytdl" />
+
+    <Button
+        android:id="@+id/webm2mp4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/main3"
+        app:layout_constraintEnd_toEndOf="@+id/ytdl"
+        app:layout_constraintStart_toStartOf="@id/ytdl"
+        app:layout_constraintTop_toBottomOf="@+id/ytdl" />
+
+    <Button
+        android:id="@+id/mp42webm"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="@string/main4"
+        app:layout_constraintEnd_toEndOf="@+id/X_dl"
+        app:layout_constraintStart_toStartOf="@+id/X_dl"
+        app:layout_constraintTop_toTopOf="@+id/webm2mp4" />
+
+    <Button
+        android:id="@+id/vid2gif"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/main5"
+        app:layout_constraintEnd_toEndOf="@+id/webm2mp4"
+        app:layout_constraintStart_toStartOf="@id/webm2mp4"
+        app:layout_constraintTop_toBottomOf="@+id/webm2mp4" />
+
+    <Button
+        android:id="@+id/plhd"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="@string/main6"
+        app:layout_constraintEnd_toEndOf="@+id/mp42webm"
+        app:layout_constraintStart_toStartOf="@+id/mp42webm"
+        app:layout_constraintTop_toTopOf="@+id/vid2gif" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
