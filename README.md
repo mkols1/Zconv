@@ -1,6 +1,6 @@
 # Zconv
 Android application for downloading and converting video files
-![](https://github.com/Zconv/docs/README_files/zeta_waverider.gif)
+![](https://github.com/mkols1/Zconv/tree/main/docs/README_files/zeta_waverider.gif)
 
 
 # Resources used 
